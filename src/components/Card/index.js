@@ -43,7 +43,7 @@ const Card = (props) => {
               },
           }}
           renderCard={(card) => (
-            <View key={card.id} >
+            <View key={card.id}  >
               <ImageBackground  source={{ uri: card.image}} style={styles.image}>
                  <View style={styles.cardInner} >
                  <Pressable

@@ -10,10 +10,10 @@ const StackNavigator = () => {
   const Stack = createNativeStackNavigator();
   return (
   <Stack.Navigator>
-    <Stack.Screen name="Home" component={HomeScreen} />
-    <Stack.Screen name="Matches" component={MatchesScreen} />
-    <Stack.Screen name="Horoscope" component={HoroscopeScreen} />
-    <Stack.Screen name="Profile" component={ProfileScreen} />
+    <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }}/>
+    <Stack.Screen name="Matches" component={MatchesScreen} options={{ headerShown: false }}/>
+    <Stack.Screen name="Horoscope" component={HoroscopeScreen} options={{ headerShown: false }}/>
+    <Stack.Screen name="Profile" component={ProfileScreen} options={{ headerShown: false }}/>
   </Stack.Navigator>
   )
 }

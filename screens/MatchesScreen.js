@@ -1,6 +1,7 @@
 import { View, Text, SafeAreaView, StyleSheet, Image, ScrollView, Pressable } from 'react-native'
 import React from 'react'
 import users from '../assets/data/users'
+import Navbar from '../src/components/Navbar'
 
 
 const MatchesScreen = () => {
@@ -16,7 +17,7 @@ const MatchesScreen = () => {
           ))}
         </ScrollView>
       </View>
-
+     <Navbar/>
     </SafeAreaView>
   )
 }

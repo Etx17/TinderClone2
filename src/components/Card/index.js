@@ -14,7 +14,7 @@ const Card = (props) => {
           stackSize={5}
           cardIndex={0}
           animateCardOpacity
-          verticalSwipe={false}
+          verticalSwipe={true}
           onSwipedLeft={()=>{
             console.log('Swiped PASS');
           }}

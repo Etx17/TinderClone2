@@ -1,6 +1,7 @@
-import { View, Text, SafeAreaView, StyleSheet, Image, ScrollView } from 'react-native'
+import { View, Text, SafeAreaView, StyleSheet, Image, ScrollView, Pressable } from 'react-native'
 import React from 'react'
-import users from '../../assets/data/users'
+import users from '../assets/data/users'
+
 
 const MatchesScreen = () => {
   return (
@@ -15,11 +16,19 @@ const MatchesScreen = () => {
           ))}
         </ScrollView>
       </View>
+
     </SafeAreaView>
   )
 }
 
 const styles = StyleSheet.create({
+  pageContainer : {
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    width: '100%',
+    flex: 1,
+    backgroundColor: '#ededed',
+  },
   root: {
     width: '100%',
     flex: 1,
